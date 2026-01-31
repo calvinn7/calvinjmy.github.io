@@ -17,6 +17,15 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Analytics - Replace GA_MEASUREMENT_ID with your actual ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
 </head>
 
 <body>
@@ -342,6 +351,96 @@
                         <span class="skill-tag">English (MUET Band 5)</span>
                         <span class="skill-tag">Malay</span>
                         <span class="skill-tag">Spanish (Basic)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Animated Skill Bars -->
+    <section class="skill-bars-section" style="background: var(--bg-primary); padding: 60px 0;">
+        <div class="container">
+            <h3 class="skill-bars-title">Core Proficiencies</h3>
+            <div class="skill-bars">
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header">
+                        <span class="skill-bar-name">Python</span>
+                        <span class="skill-bar-percent">95%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header">
+                        <span class="skill-bar-name">Machine Learning / Deep Learning</span>
+                        <span class="skill-bar-percent">90%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header">
+                        <span class="skill-bar-name">LLM Integration &amp; Prompt Engineering</span>
+                        <span class="skill-bar-percent">88%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="88"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header">
+                        <span class="skill-bar-name">Computer Vision</span>
+                        <span class="skill-bar-percent">85%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header">
+                        <span class="skill-bar-name">Cloud (AWS/GCP)</span>
+                        <span class="skill-bar-percent">80%</span>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Stats -->
+    <section class="github-stats" style="background: var(--bg-primary); padding: 60px 0;">
+        <div class="container">
+            <h3 class="github-stats-title">GitHub Activity</h3>
+            <div class="github-stats-container">
+                <img src="https://github-readme-stats.vercel.app/api?username=calvinn7&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a1628" alt="GitHub Stats" class="github-stats-img">
+                <img src="https://github-readme-streak-stats.herokuapp.com/?user=calvinn7&theme=tokyonight&hide_border=true&background=0a1628" alt="GitHub Streak" class="github-stats-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <p class="section-subtitle">What colleagues say about working with me</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">"</div>
+                        <p class="testimonial-text">Calvin demonstrated exceptional technical skills and a strong work ethic during his internship. His contributions to our AI projects, particularly in fraud detection and computer vision, were invaluable. He is a quick learner with great problem-solving abilities.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/testimony-cto-gamer2gamer.jpg" alt="CTO" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">CTO</h4>
+                            <p class="testimonial-role">Gamer2Gamer Sdn Bhd</p>
+                        </div>
                     </div>
                 </div>
             </div>
