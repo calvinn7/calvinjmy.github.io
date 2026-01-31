@@ -155,7 +155,7 @@ function initBatSignal() {
             width: 100%;
             height: 100%;
             background: radial-gradient(circle at ${batSignal.offsetLeft + 30}px ${batSignal.offsetTop + 30}px, 
-                rgba(212, 175, 55, 0.3) 0%, transparent 50%);
+                rgba(0, 168, 232, 0.3) 0%, transparent 50%);
             pointer-events: none;
             z-index: 998;
             animation: flashPulse 1s ease-out forwards;
@@ -239,7 +239,7 @@ Contact: calvinjmy993@gmail.com
 /* Skill Bar Animation */
 function initSkillBars() {
     const skillBars = document.querySelectorAll('.skill-bar-fill');
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -251,11 +251,61 @@ function initSkillBars() {
             }
         });
     }, { threshold: 0.5 });
-    
+
     skillBars.forEach(bar => observer.observe(bar));
 }
 
 // Add to DOMContentLoaded
 document.addEventListener('DOMContentLoaded', () => {
     initSkillBars();
+});
+
+/* Random Bat Quotes Feature */
+const batQuotes = [
+    { text: "Why do we fall? So we can learn to pick ourselves up.", source: "Batman Begins" },
+    { text: "It's not who I am underneath, but what I do that defines me.", source: "Batman Begins" },
+    { text: "You either die a hero, or you live long enough to see yourself become the villain.", source: "The Dark Knight" },
+    { text: "Some men just want to watch the world burn.", source: "The Dark Knight" },
+    { text: "A hero can be anyone.", source: "The Dark Knight Rises" },
+    { text: "The night is darkest just before the dawn.", source: "The Dark Knight" },
+    { text: "I'm not afraid. I'm angry.", source: "Batman Begins" },
+    { text: "Endure. You can be the outcast. You can make the choice no one else can make.", source: "The Dark Knight" },
+    { text: "Do not go gentle into that good night.", source: "Interstellar" },
+    { text: "We used to look up at the sky and wonder at our place in the stars.", source: "Interstellar" },
+    { text: "Time is the one thing we can't get back.", source: "Tenet" },
+    { text: "You miss 100%% of the shots you don't take. - Wayne Gretzky", source: "Michael Scott" }
+];
+
+function showBatQuote() {
+    const quote = batQuotes[Math.floor(Math.random() * batQuotes.length)];
+
+    // Remove existing quote popup
+    const existing = document.querySelector('.bat-quote-popup');
+    if (existing) existing.remove();
+
+    // Create popup
+    const popup = document.createElement('div');
+    popup.className = 'bat-quote-popup';
+    popup.innerHTML = `
+        <p class="bat-quote-text">"${quote.text}"</p>
+        <span class="bat-quote-source">— ${quote.source}</span>
+    `;
+    document.body.appendChild(popup);
+
+    // Animate in
+    setTimeout(() => popup.classList.add('visible'), 10);
+
+    // Remove after 4 seconds
+    setTimeout(() => {
+        popup.classList.remove('visible');
+        setTimeout(() => popup.remove(), 500);
+    }, 4000);
+}
+
+// Add click handler to bat signal
+document.addEventListener('DOMContentLoaded', () => {
+    const batSignal = document.getElementById('batSignal');
+    if (batSignal) {
+        batSignal.addEventListener('click', showBatQuote);
+    }
 });

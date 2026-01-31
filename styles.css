@@ -1379,3 +1379,129 @@ body {
     color: var(--text-muted);
     margin: 0;
 }
+
+/* GitHub Profile Card */
+.github-profile-card {
+    display: inline-block;
+    background: var(--bg-card);
+    padding: 24px 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+}
+
+.github-profile-card:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-glow);
+}
+
+.github-card-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.github-icon {
+    font-size: 2.5rem;
+}
+
+.github-card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.github-username {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.github-cta {
+    font-size: 0.9rem;
+    color: var(--accent-primary);
+}
+
+/* Testimonial PDF Link */
+.testimonial-pdf-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: rgba(0, 168, 232, 0.1);
+    color: var(--accent-primary);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all var(--transition-normal);
+    border: 1px solid var(--accent-primary);
+}
+
+.testimonial-pdf-link:hover {
+    background: var(--accent-primary);
+    color: #0a1628;
+    transform: translateY(-2px);
+}
+
+/* Testimonial Avatar Placeholder */
+.testimonial-avatar-placeholder {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #0a1628;
+    font-size: 0.9rem;
+}
+
+/* Bat Quote Popup */
+.bat-quote-popup {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    max-width: 350px;
+    padding: 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--accent-primary);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 168, 232, 0.3);
+    z-index: 1000;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.5s ease;
+}
+
+.bat-quote-popup.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.bat-quote-text {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.bat-quote-source {
+    font-size: 0.85rem;
+    color: var(--accent-primary);
+    font-weight: 500;
+}
+
+/* GitHub Profile Link */
+.github-profile-link {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+.github-profile-link:hover {
+    color: var(--text-primary);
+}
