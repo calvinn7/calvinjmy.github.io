@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Calvin Jee - Fresh Graduate AI Engineer specializing in GenAI, LLMs, and Computer Vision. B.Sc. Computer Science (AI) from University of Malaya.">
+    <meta name="keywords" content="AI Engineer, Machine Learning, LLM, GenAI, Computer Vision, Calvin Jee">
+    <title>Calvin Jee | AI Engineer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Film Grain Overlay -->
+    <div class="film-grain"></div>
+
+    <!-- Bat Signal Easter Egg -->
+    <div class="bat-signal" id="batSignal"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">CJ</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-subtitle">NOW SHOWING</div>
+            <h1 class="hero-title">
+                <span class="title-line">CALVIN</span>
+                <span class="title-line accent">JEE</span>
+            </h1>
+            <p class="hero-tagline">
+                <span class="tagline-item">AI Engineer</span>
+                <span class="tagline-separator">•</span>
+                <span class="tagline-item">GenAI & LLMs</span>
+                <span class="tagline-separator">•</span>
+                <span class="tagline-item">Film Enthusiast</span>
+            </p>
+            <div class="hero-quote">
+                <p>"You miss 100% of the shots you don't take."</p>
+                <span class="quote-author">— Wayne Gretzky — Michael Scott</span>
+            </div>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-avatar">
+                        <!-- Profile Photo -->
+                        <img src="assets/calvin_photo.jpg" alt="Calvin Jee" class="avatar-img">
+                    </div>
+                    <div class="about-info">
+                        <h3 class="about-name">Calvin Jee Meng Yau</h3>
+                        <p class="about-location">📍 Petaling Jaya, Selangor, Malaysia</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-value">3.56</span>
+                                <span class="stat-label">CGPA</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">2</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">2</span>
+                                <span class="stat-label">Internships</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-bio">
+                    <p>Fresh <strong>Computer Science (AI)</strong> graduate from <strong>University of Malaya</strong>
+                        with production-grade engineering experience in Cloud Computing (AWS/GCP), LLM Integration, and
+                        Computer Vision.</p>
+                    <p>Proven track record of deploying scalable AI solutions, including automated document processing
+                        and fraud detection systems. Built hybrid deep learning models for real-time health analytics as
+                        my Final Year Project.</p>
+                    <p>When I'm not training models, you'll find me watching Christopher Nolan films in IMAX, logging
+                        movies on Letterboxd, or playing FC26.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Featured productions from my filmography</p>
+
+            <div class="projects-grid">
+                <!-- Project 1: SADS -->
+                <article class="project-card">
+                    <div class="project-poster">
+                        <div class="poster-gradient"></div>
+                        <div class="poster-content">
+                            <span class="project-year">2025</span>
+                            <div class="project-icon">🏥</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Sleep Anomaly Detection System</h3>
+                        <p class="project-subtitle">SADS • Final Year Project</p>
+                        <div class="project-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">5.0</span>
+                        </div>
+                        <p class="project-description">Hybrid Edge-AI Healthcare Framework for real-time sleep anomaly
+                            detection. Achieved extreme model compression (157.2 KB) with TensorFlow Lite.</p>
+                        <div class="project-tags">
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">TFLite</span>
+                            <span class="tag">CNN-LSTM</span>
+                            <span class="tag">Edge AI</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">📦 157.2 KB</span>
+                            <span class="stat">📈 33x Data Aug</span>
+                        </div>
+                        <a href="https://github.com/calvinn7/sleep-anomaly-detection" class="project-link"
+                            target="_blank" rel="noopener">View on GitHub →</a>
+                    </div>
+                </article>
+
+                <!-- Project 2: IntelliFlix -->
+                <article class="project-card">
+                    <div class="project-poster">
+                        <div class="poster-gradient"></div>
+                        <div class="poster-content">
+                            <span class="project-year">2024</span>
+                            <div class="project-icon">🎬</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">IntelliFlix</h3>
+                        <p class="project-subtitle">AI-Powered Semantic Search Platform</p>
+                        <div class="project-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-text">4.5</span>
+                        </div>
+                        <p class="project-description">Context-Aware RAG Pipeline with ChromaDB and Gemini Pro. Features
+                            autonomous agentic reasoning and explainable AI citations.</p>
+                        <div class="project-tags">
+                            <span class="tag">RAG</span>
+                            <span class="tag">Gemini Pro</span>
+                            <span class="tag">ChromaDB</span>
+                            <span class="tag">Streamlit</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">🤖 Agentic AI</span>
+                            <span class="stat">📚 Vector Search</span>
+                        </div>
+                        <a href="https://github.com/calvinjmy" class="project-link" target="_blank" rel="noopener">View
+                            on GitHub →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">My professional filmography</p>
+
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Jul 2025 – Dec 2025</span>
+                            <span class="timeline-badge">Current</span>
+                        </div>
+                        <h3 class="timeline-title">AI Data Annotator</h3>
+                        <p class="timeline-company">YTL AI Labs • Remote / Kuala Lumpur</p>
+                        <ul class="timeline-details">
+                            <li>Contributing to training pipeline of <strong>'ILMU'</strong> (Sovereign LLM) through
+                                high-quality data annotation</li>
+                            <li>Performing logical consistency checks and OCR validation for model training datasets
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Jul 2024 – Jan 2025</span>
+                        </div>
+                        <h3 class="timeline-title">AI Engineer Intern</h3>
+                        <p class="timeline-company">Gamer2Gamer Sdn Bhd • Kuala Lumpur</p>
+                        <ul class="timeline-details">
+                            <li>Engineered full-stack <strong>RFI Generator</strong> integrating Claude API and OCR for
+                                automated document processing</li>
+                            <li>Developed production-grade <strong>eKYC fraud detection</strong> models using LightGBM
+                                and AWS</li>
+                            <li>Designed <strong>AI-Generated Fake Face Detection</strong> models (v7.0–8.0) using
+                                Stable Diffusion and Flux on GCP</li>
+                            <li>Improved <strong>Moire Detection Models</strong> (AUC 0.74) with FFT augmentation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Oct 2022 – Mar 2026</span>
+                            <span class="timeline-badge education">Education</span>
+                        </div>
+                        <h3 class="timeline-title">Bachelor of Computer Science (AI)</h3>
+                        <p class="timeline-company">University of Malaya • Kuala Lumpur</p>
+                        <p class="timeline-note">CGPA: 3.56/4.00 • Graduated: March 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">Genres I specialize in</p>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">💻</span>
+                        Programming
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">🤖</span>
+                        AI & Machine Learning
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">TFLite</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">LightGBM</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">OCR</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">✨</span>
+                        GenAI & LLMs
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag featured">Claude API</span>
+                        <span class="skill-tag featured">GPT Integration</span>
+                        <span class="skill-tag">RAG Pipelines</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">☁️</span>
+                        Cloud & DevOps
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS (S3, EC2)</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">DVC</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">🌐</span>
+                        Web Frameworks
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Flutter</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">🗣️</span>
+                        Languages
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Mandarin (Native)</span>
+                        <span class="skill-tag">English (MUET Band 5)</span>
+                        <span class="skill-tag">Malay</span>
+                        <span class="skill-tag">Spanish (Basic)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="section interests" id="interests">
+        <div class="container">
+            <h2 class="section-title">Interests</h2>
+            <p class="section-subtitle">What I do when not training models</p>
+
+            <div class="interests-grid">
+                <!-- Cinema -->
+                <div class="interest-card">
+                    <div class="interest-icon">🎬</div>
+                    <h3 class="interest-title">Cinema & IMAX</h3>
+                    <p class="interest-description">Christopher Nolan superfan. Catch me watching films in IMAX whenever
+                        possible. The Dark Knight trilogy holds a special place in my heart.</p>
+                    <div class="interest-tags">
+                        <span>Nolan</span>
+                        <span>Batman</span>
+                        <span>IMAX</span>
+                    </div>
+                </div>
+
+                <!-- Letterboxd -->
+                <div class="interest-card letterboxd-card">
+                    <div class="interest-icon">📝</div>
+                    <h3 class="interest-title">Letterboxd</h3>
+                    <p class="interest-description">Logging every film I watch. Reviews, ratings, and watchlists — it's
+                        basically my second social media.</p>
+                    <div class="letterboxd-widget">
+                        <a href="https://letterboxd.com/calvinjmy_" target="_blank" rel="noopener"
+                            class="letterboxd-profile-link">
+                            <div class="letterboxd-badge">
+                                <span class="lb-logo">📽️</span>
+                                <span class="lb-username">@calvinjmy_</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="https://letterboxd.com/calvinjmy_" class="interest-link" target="_blank"
+                        rel="noopener">View Profile →</a>
+                </div>
+
+                <!-- Gaming -->
+                <div class="interest-card">
+                    <div class="interest-icon">🎮</div>
+                    <h3 class="interest-title">Gaming</h3>
+                    <p class="interest-description">FC26 and FPL enthusiast. Currently ranked top 25k in Malaysia on
+                        Fantasy Premier League. Love the Assassin's Creed series - especially Black Flag, Unity,
+                        Syndicate, and Rogue.</p>
+                    <div class="interest-tags">
+                        <span>FC26</span>
+                        <span>FPL</span>
+                        <span>Assassin's Creed</span>
+                    </div>
+                </div>
+
+                <!-- Football -->
+                <div class="interest-card">
+                    <div class="interest-icon">⚽</div>
+                    <h3 class="interest-title">Chelsea FC</h3>
+                    <p class="interest-description">Blues supporter through and through. Cole Palmer is my favorite
+                        player - Cold Palmer delivers when it matters.</p>
+                    <div class="interest-tags">
+                        <span>Chelsea</span>
+                        <span>Cole Palmer</span>
+                        <span>Premier League</span>
+                    </div>
+                </div>
+
+                <!-- Leadership -->
+                <div class="interest-card">
+                    <div class="interest-icon">🏆</div>
+                    <h3 class="interest-title">Leadership</h3>
+                    <p class="interest-description">Vice Director of Dean's Cup, leading 50+ committee members for a
+                        faculty-wide sports event. Also a Student Facilitator at UM.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">Let's create something together</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-message">Looking for an AI Engineer who brings creativity and technical depth?
+                        Let's talk.</p>
+
+                    <div class="contact-links">
+                        <a href="mailto:calvinjmy993@gmail.com" class="contact-link">
+                            <span class="contact-icon">📧</span>
+                            <span>calvinjmy993@gmail.com</span>
+                        </a>
+                        <a href="tel:+60123357596" class="contact-link">
+                            <span class="contact-icon">📱</span>
+                            <span>+6012-335 7596</span>
+                        </a>
+                        <a href="https://linkedin.com/in/calvinjmy" class="contact-link" target="_blank" rel="noopener">
+                            <span class="contact-icon">💼</span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/calvinjmy" class="contact-link" target="_blank" rel="noopener">
+                            <span class="contact-icon">🐙</span>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://letterboxd.com/calvinjmy_" class="contact-link" target="_blank" rel="noopener">
+                            <span class="contact-icon">🎬</span>
+                            <span>Letterboxd</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resume Download -->
+                <a href="assets/CV-Calvin_Jee_Meng_Yau-Feb-26.pdf" class="btn btn-primary btn-download" download>
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 Calvin Jee. Designed with 🎬 and ☕</p>
+            <p class="footer-quote">"Cool. Cool cool cool cool cool." — Jake Peralta</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
