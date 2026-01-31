@@ -451,6 +451,12 @@ body {
 
 .about-avatar {
     margin-bottom: 24px;
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 24px auto;
+    overflow: visible;
 }
 
 .avatar-placeholder {
@@ -1504,4 +1510,39 @@ body {
 
 .github-profile-link:hover {
     color: var(--text-primary);
+}
+
+/* Racing Helmet Hover Effect */
+.helmet-hover {
+    position: relative;
+    cursor: pointer;
+}
+
+.helmet-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    width: 180px;
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.helmet-hover:hover .helmet-overlay {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.helmet-hover:hover .avatar-img {
+    filter: brightness(0.7);
+    transform: scale(1.02);
+}
+
+.helmet-hover .avatar-img {
+    transition: all 0.4s ease;
 }
