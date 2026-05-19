@@ -1212,69 +1212,135 @@ body {
     }
 }
 /* ===================================
-   Animated Skill Bars
+   Proficiency Tiers
    =================================== */
-.skill-bars-section {
-    margin-top: 48px;
-    padding-top: 48px;
+.proficiency-section {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.skill-bars-title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 24px;
-    color: var(--text-primary);
+.proficiency-title {
+    font-size: 1.5rem;
+    font-weight: 700;
     text-align: center;
+    color: var(--text-primary);
+    margin-bottom: 6px;
 }
 
-.skill-bars {
-    max-width: 600px;
-    margin: 0 auto;
+.proficiency-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+}
+
+.proficiency-tiers {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 28px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.skill-bar-item {
-    width: 100%;
+.proficiency-tier {
+    background: var(--bg-card);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 24px 28px;
+    transition: border-color var(--transition-normal);
 }
 
-.skill-bar-header {
+.proficiency-tier:hover {
+    border-color: rgba(255, 255, 255, 0.14);
+}
+
+.tier-header {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 8px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
 }
 
-.skill-bar-name {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
+.tier-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.tier-label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.tier-desc {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-left: auto;
+    font-style: italic;
+}
+
+/* Tier colour variants */
+.tier-production .tier-dot  { background: #00c896; }
+.tier-production .tier-label { color: #00c896; }
+
+.tier-familiar .tier-dot   { background: var(--accent-primary); }
+.tier-familiar .tier-label  { color: var(--accent-primary); }
+
+.tier-exposure .tier-dot   { background: var(--text-muted); }
+.tier-exposure .tier-label  { color: var(--text-muted); }
+
+/* Chips */
+.tier-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tier-chip {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
     font-weight: 500;
+    border: 1px solid transparent;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    cursor: default;
 }
 
-.skill-bar-percent {
-    font-size: 0.85rem;
+.tier-chip:hover {
+    transform: translateY(-2px);
+}
+
+.chip-production {
+    background: rgba(0, 200, 150, 0.12);
+    color: #00c896;
+    border-color: rgba(0, 200, 150, 0.3);
+}
+
+.chip-production:hover {
+    box-shadow: 0 4px 12px rgba(0, 200, 150, 0.2);
+}
+
+.chip-familiar {
+    background: rgba(0, 168, 232, 0.12);
     color: var(--accent-primary);
-    font-weight: 600;
+    border-color: rgba(0, 168, 232, 0.3);
 }
 
-.skill-bar-track {
-    height: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-    overflow: hidden;
+.chip-familiar:hover {
+    box-shadow: 0 4px 12px rgba(0, 168, 232, 0.2);
 }
 
-.skill-bar-fill {
-    height: 100%;
-    background: var(--gradient-primary);
-    border-radius: 4px;
-    width: 0;
-    transition: width 1.5s ease-out;
+.chip-exposure {
+    background: rgba(136, 153, 166, 0.1);
+    color: var(--text-muted);
+    border-color: rgba(136, 153, 166, 0.2);
 }
 
-.skill-bar-fill.animated {
-    width: var(--target-width);
+.chip-exposure:hover {
+    box-shadow: 0 4px 12px rgba(136, 153, 166, 0.15);
 }
 
 /* ===================================

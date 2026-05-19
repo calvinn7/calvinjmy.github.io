@@ -433,83 +433,76 @@
     </section>
 
 
-    <!-- Animated Skill Bars -->
-    <section class="skill-bars-section" style="background: var(--bg-primary); padding: 60px 0;">
+    <!-- Proficiency Tiers -->
+    <section class="proficiency-section" style="background: var(--bg-primary); padding: 60px 0;">
         <div class="container">
-            <h3 class="skill-bars-title">Core Proficiencies</h3>
-            <div class="skill-bars">
-                <div class="skill-bar-item">
-                    <div class="skill-bar-header">
-                        <span class="skill-bar-name">Python</span>
-                        <span class="skill-bar-percent">90%</span>
+            <h3 class="proficiency-title">Core Proficiencies</h3>
+            <p class="proficiency-subtitle">Grouped by depth of hands-on experience</p>
+
+            <div class="proficiency-tiers">
+
+                <!-- Tier 1: Production -->
+                <div class="proficiency-tier">
+                    <div class="tier-header tier-production">
+                        <span class="tier-dot"></span>
+                        <span class="tier-label">Production Experience</span>
+                        <span class="tier-desc">Shipped in real projects or internships</span>
                     </div>
-                    <div class="skill-bar-track">
-                        <div class="skill-bar-fill" data-width="90"></div>
-                    </div>
-                </div>
-                <div class="skill-bar-item">
-                    <div class="skill-bar-header">
-                        <span class="skill-bar-name">Machine Learning / Deep Learning</span>
-                        <span class="skill-bar-percent">85%</span>
-                    </div>
-                    <div class="skill-bar-track">
-                        <div class="skill-bar-fill" data-width="85"></div>
-                    </div>
-                </div>
-                <div class="skill-bar-item">
-                    <div class="skill-bar-header">
-                        <span class="skill-bar-name">LLM Integration &amp; Prompt Engineering</span>
-                        <span class="skill-bar-percent">85%</span>
-                    </div>
-                    <div class="skill-bar-track">
-                        <div class="skill-bar-fill" data-width="85"></div>
-                    </div>
-                </div>
-                <div class="skill-bar-item">
-                    <div class="skill-bar-header">
-                        <span class="skill-bar-name">Computer Vision</span>
-                        <span class="skill-bar-percent">80%</span>
-                    </div>
-                    <div class="skill-bar-track">
-                        <div class="skill-bar-fill" data-width="80"></div>
+                    <div class="tier-chips">
+                        <span class="tier-chip chip-production">Python</span>
+                        <span class="tier-chip chip-production">TensorFlow / Keras</span>
+                        <span class="tier-chip chip-production">LightGBM</span>
+                        <span class="tier-chip chip-production">Gemini API</span>
+                        <span class="tier-chip chip-production">Claude API</span>
+                        <span class="tier-chip chip-production">LangGraph</span>
+                        <span class="tier-chip chip-production">RAG Pipelines</span>
+                        <span class="tier-chip chip-production">Computer Vision</span>
+                        <span class="tier-chip chip-production">OCR</span>
+                        <span class="tier-chip chip-production">AWS (S3, EC2)</span>
+                        <span class="tier-chip chip-production">GCP</span>
+                        <span class="tier-chip chip-production">FastAPI</span>
+                        <span class="tier-chip chip-production">Vue.js</span>
+                        <span class="tier-chip chip-production">Java</span>
+                        <span class="tier-chip chip-production">Git / DVC</span>
                     </div>
                 </div>
-                <div class="skill-bar-item">
-                    <div class="skill-bar-header">
-                        <span class="skill-bar-name">Cloud (AWS/GCP)</span>
-                        <span class="skill-bar-percent">75%</span>
+
+                <!-- Tier 2: Familiar -->
+                <div class="proficiency-tier">
+                    <div class="tier-header tier-familiar">
+                        <span class="tier-dot"></span>
+                        <span class="tier-label">Familiar With</span>
+                        <span class="tier-desc">Comfortable building projects independently</span>
                     </div>
-                    <div class="skill-bar-track">
-                        <div class="skill-bar-fill" data-width="75"></div>
-                    </div>
-                </div>
-                <div class="skill-bar-item">
-                    <div class="skill-bar-header">
-                        <span class="skill-bar-name">TensorFlow / Keras</span>
-                        <span class="skill-bar-percent">80%</span>
-                    </div>
-                    <div class="skill-bar-track">
-                        <div class="skill-bar-fill" data-width="80"></div>
-                    </div>
-                </div>
-                <div class="skill-bar-item">
-                    <div class="skill-bar-header">
-                        <span class="skill-bar-name">SQL &amp; Databases</span>
-                        <span class="skill-bar-percent">75%</span>
-                    </div>
-                    <div class="skill-bar-track">
-                        <div class="skill-bar-fill" data-width="75"></div>
+                    <div class="tier-chips">
+                        <span class="tier-chip chip-familiar">Scikit-learn</span>
+                        <span class="tier-chip chip-familiar">LangChain</span>
+                        <span class="tier-chip chip-familiar">ChromaDB</span>
+                        <span class="tier-chip chip-familiar">SQL</span>
+                        <span class="tier-chip chip-familiar">Next.js</span>
+                        <span class="tier-chip chip-familiar">React</span>
+                        <span class="tier-chip chip-familiar">Streamlit</span>
+                        <span class="tier-chip chip-familiar">Docker</span>
+                        <span class="tier-chip chip-familiar">Prompt Engineering</span>
+                        <span class="tier-chip chip-familiar">pandas / NumPy</span>
                     </div>
                 </div>
-                <div class="skill-bar-item">
-                    <div class="skill-bar-header">
-                        <span class="skill-bar-name">Vue.js / React</span>
-                        <span class="skill-bar-percent">70%</span>
+
+                <!-- Tier 3: Exposure -->
+                <div class="proficiency-tier">
+                    <div class="tier-header tier-exposure">
+                        <span class="tier-dot"></span>
+                        <span class="tier-label">Exposure / Learning</span>
+                        <span class="tier-desc">Actively exploring and experimenting with</span>
                     </div>
-                    <div class="skill-bar-track">
-                        <div class="skill-bar-fill" data-width="70"></div>
+                    <div class="tier-chips">
+                        <span class="tier-chip chip-exposure">Flutter</span>
+                        <span class="tier-chip chip-exposure">Kubernetes</span>
+                        <span class="tier-chip chip-exposure">MLflow</span>
+                        <span class="tier-chip chip-exposure">TypeScript</span>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -619,11 +612,11 @@
                 <div class="interest-card">
                     <div class="interest-icon">⚽</div>
                     <h3 class="interest-title">Chelsea FC</h3>
-                    <p class="interest-description">Blues supporter through and through. Cole Palmer is my favorite
-                        player - Cold Palmer delivers when it matters.</p>
+                    <p class="interest-description">Blues supporter through and through. Eden Hazard is my favorite
+                        player - He always delivers when it matters.</p>
                     <div class="interest-tags">
                         <span>Chelsea</span>
-                        <span>Cole Palmer</span>
+                        <span>Eden Hazard</span>
                         <span>Premier League</span>
                     </div>
                 </div>
@@ -698,7 +691,7 @@
                 </div>
 
                 <!-- Resume Download -->
-                <a href="assets/CV-Calvin_Jee_Meng_Yau-Feb-26.pdf" class="btn btn-primary btn-download" download>
+                <a href="assets/CV-Calvin_Jee_Meng_Yau.pdf" class="btn btn-primary btn-download" download>
                     Download Resume
                 </a>
             </div>
@@ -708,7 +701,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">© 2025 Calvin Jee. Designed with 🎬 and ☕</p>
+            <p class="footer-text">© 2026 Calvin Jee. Designed with 🎬 and ☕</p>
             <p class="footer-quote">"Cool. Cool cool cool cool cool." — Jake Peralta</p>
         </div>
     </footer>

@@ -236,29 +236,7 @@ Contact: calvinjmy993@gmail.com
     'font-size: 12px; color: #00a8e8;'
 );
 
-/* Skill Bar Animation */
-function initSkillBars() {
-    const skillBars = document.querySelectorAll('.skill-bar-fill');
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const bar = entry.target;
-                const width = bar.getAttribute('data-width');
-                bar.style.setProperty('--target-width', width + '%');
-                bar.classList.add('animated');
-                observer.unobserve(bar);
-            }
-        });
-    }, { threshold: 0.5 });
-
-    skillBars.forEach(bar => observer.observe(bar));
-}
-
-// Add to DOMContentLoaded
-document.addEventListener('DOMContentLoaded', () => {
-    initSkillBars();
-});
 
 /* Random Bat Quotes Feature */
 const batQuotes = [
