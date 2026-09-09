@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Calvin Jee - Fresh Graduate AI Engineer specializing in GenAI, LLMs, and Computer Vision. B.Sc. Computer Science (AI) from University of Malaya.">
-    <meta name="keywords" content="AI Engineer, Machine Learning, LLM, GenAI, Computer Vision, Calvin Jee">
+        content="Calvin Jee - Fresh Graduate AI Engineer specializing in GenAI, LLMs, and RAG. B.Sc. Computer Science (AI) from University of Malaya.">
+    <meta name="keywords" content="AI Engineer, Machine Learning, LLM, GenAI, RAG, Calvin Jee">
     <title>Calvin Jee | AI Engineer</title>
 
     <!-- Favicon -->
@@ -20,7 +20,7 @@
         rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
 </head>
 
 <body>
@@ -99,7 +99,7 @@
                                 <span class="stat-label">CGPA</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-value">5</span>
+                                <span class="stat-value">6</span>
                                 <span class="stat-label">Projects</span>
                             </div>
                             <div class="stat">
@@ -131,12 +131,47 @@
             <p class="section-subtitle">Featured productions from my filmography</p>
 
             <div class="projects-grid">
-                <!-- Project: Atlas Banking AI -->
+                <!-- Project 1: AI Customer Retention Assistant -->
                 <article class="project-card">
                     <div class="project-poster">
                         <div class="poster-gradient"></div>
                         <div class="poster-content">
-                            <span class="project-year">2026</span>
+                            <span class="project-year">Sep 2026</span>
+                            <div class="project-icon">🤝</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">AI Customer Retention Assistant</h3>
+                        <p class="project-subtitle">Full-stack AI Sales Assistant</p>
+                        <div class="project-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">Case Study</span>
+                        </div>
+                        <p class="project-description">Analyzes customer churn risk to generate highly personalized retention pitches in under 5 seconds. Guaranteed 100% structured JSON outputs via Gemini's native response schema and Pydantic validation.</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Gemini API</span>
+                            <span class="tag">Pydantic</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">⚡ &lt;5s Pitch Gen</span>
+                            <span class="stat">🛡️ 0 Parse Errors</span>
+                        </div>
+                        <div style="display: flex; gap: 16px;">
+                            <a href="case-study-retention.html" class="project-link">View Case Study →</a>
+                            <a href="https://github.com/calvinn7/recontract-pitch-assistant/" class="project-link" target="_blank" rel="noopener">GitHub 🐙</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Atlas Banking AI -->
+                <article class="project-card">
+                    <div class="project-poster">
+                        <div class="poster-gradient"></div>
+                        <div class="poster-content">
+                            <span class="project-year">May 2026</span>
                             <div class="project-icon">🏦</div>
                         </div>
                     </div>
@@ -163,81 +198,12 @@
                     </div>
                 </article>
 
-                <!-- Project 1: SADS -->
-                <article class="project-card">
-                    <div class="project-poster">
-                        <div class="poster-gradient"></div>
-                        <div class="poster-content">
-                            <span class="project-year">2025</span>
-                            <div class="project-icon">🏥</div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Sleep Anomaly Detection System</h3>
-                        <p class="project-subtitle">SADS • Final Year Project</p>
-                        <div class="project-rating">
-                            <span class="stars">★★★★★</span>
-                            <span class="rating-text">5.0</span>
-                        </div>
-                        <p class="project-description">Hybrid Edge-AI Healthcare Framework for real-time sleep anomaly
-                            detection. Achieved extreme model compression (157.2 KB) with TensorFlow Lite.</p>
-                        <div class="project-tags">
-                            <span class="tag">TensorFlow</span>
-                            <span class="tag">TFLite</span>
-                            <span class="tag">CNN-LSTM</span>
-                            <span class="tag">Edge AI</span>
-                        </div>
-                        <div class="project-stats">
-                            <span class="stat">📦 157.2 KB</span>
-                            <span class="stat">📈 33x Data Aug</span>
-                        </div>
-                        <a href="https://github.com/calvinn7/sleep-anomaly-detection" class="project-link"
-                            target="_blank" rel="noopener">View on GitHub →</a>
-                    </div>
-                </article>
-
-                <!-- Project 2: IntelliFlix Hub -->
-                <article class="project-card">
-                    <div class="project-poster">
-                        <div class="poster-gradient"></div>
-                        <div class="poster-content">
-                            <span class="project-year">2024</span>
-                            <div class="project-icon">🎬</div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">IntelliFlix Hub</h3>
-                        <p class="project-subtitle">AI-Powered Movie Discovery Platform</p>
-                        <div class="project-rating">
-                            <span class="stars">★★★★★</span>
-                            <span class="rating-text">5.0</span>
-                        </div>
-                        <p class="project-description">AI-Powered Movie Discovery Platform with semantic search,
-                            RAG-enhanced chat, and intelligent recommendations. Features FastAPI backend, Next.js
-                            frontend, and Google Gemini AI.</p>
-                        <div class="project-tags">
-                            <span class="tag">FastAPI</span>
-                            <span class="tag">Next.js 14</span>
-                            <span class="tag">ChromaDB</span>
-                            <span class="tag">Gemini AI</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Tailwind</span>
-                        </div>
-                        <div class="project-stats">
-                            <span class="stat">🔍 Semantic Search</span>
-                            <span class="stat">💬 RAG Chat</span>
-                        </div>
-                        <a href="https://github.com/calvinn7/intelliflix-hub" class="project-link" target="_blank"
-                            rel="noopener">View
-                            on GitHub →</a>
-                    </div>
-                </article>
                 <!-- Project 3: F1 Race Strategy Agent -->
                 <article class="project-card">
                     <div class="project-poster">
                         <div class="poster-gradient"></div>
                         <div class="poster-content">
-                            <span class="project-year">2025</span>
+                            <span class="project-year">Feb 2026</span>
                             <div class="project-icon">🏎️</div>
                         </div>
                     </div>
@@ -271,7 +237,7 @@
                     <div class="project-poster">
                         <div class="poster-gradient"></div>
                         <div class="poster-content">
-                            <span class="project-year">2026</span>
+                            <span class="project-year">Feb 2026</span>
                             <div class="project-icon">🔍</div>
                         </div>
                     </div>
@@ -297,6 +263,76 @@
                             <span class="stat">📄 Auto SAR PDFs</span>
                         </div>
                         <a href="https://github.com/calvinn7/hybrid-financial-fraud-detection" class="project-link"
+                            target="_blank" rel="noopener">View on GitHub →</a>
+                    </div>
+                </article>
+
+                <!-- Project 5: IntelliFlix Hub -->
+                <article class="project-card">
+                    <div class="project-poster">
+                        <div class="poster-gradient"></div>
+                        <div class="poster-content">
+                            <span class="project-year">Jan 2026</span>
+                            <div class="project-icon">🎬</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">IntelliFlix Hub</h3>
+                        <p class="project-subtitle">AI-Powered Movie Discovery Platform</p>
+                        <div class="project-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">5.0</span>
+                        </div>
+                        <p class="project-description">AI-Powered Movie Discovery Platform with semantic search,
+                            RAG-enhanced chat, and intelligent recommendations. Features FastAPI backend, Next.js
+                            frontend, and Google Gemini AI.</p>
+                        <div class="project-tags">
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">Next.js 14</span>
+                            <span class="tag">ChromaDB</span>
+                            <span class="tag">Gemini AI</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">🔍 Semantic Search</span>
+                            <span class="stat">💬 RAG Chat</span>
+                        </div>
+                        <a href="https://github.com/calvinn7/intelliflix-hub" class="project-link" target="_blank"
+                            rel="noopener">View
+                            on GitHub →</a>
+                    </div>
+                </article>
+
+                <!-- Project 6: SADS (FYP) -->
+                <article class="project-card">
+                    <div class="project-poster">
+                        <div class="poster-gradient"></div>
+                        <div class="poster-content">
+                            <span class="project-year">Mar 2025 – Jan 2026</span>
+                            <div class="project-icon">🏥</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Sleep Anomaly Detection System</h3>
+                        <p class="project-subtitle">SADS • Final Year Project</p>
+                        <div class="project-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">5.0</span>
+                        </div>
+                        <p class="project-description">Hybrid Edge-AI Healthcare Framework for real-time sleep anomaly
+                            detection. Achieved extreme model compression (157.2 KB) with TensorFlow Lite.</p>
+                        <div class="project-tags">
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">TFLite</span>
+                            <span class="tag">CNN-LSTM</span>
+                            <span class="tag">Edge AI</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">📦 157.2 KB</span>
+                            <span class="stat">📈 33x Data Aug</span>
+                        </div>
+                        <a href="https://github.com/calvinn7/sleep-anomaly-detection" class="project-link"
                             target="_blank" rel="noopener">View on GitHub →</a>
                     </div>
                 </article>
@@ -360,7 +396,7 @@
                         </div>
                         <h3 class="timeline-title">Bachelor of Computer Science (AI)</h3>
                         <p class="timeline-company">University of Malaya • Kuala Lumpur</p>
-                        <p class="timeline-note">CGPA: 3.56/4.00 • Graduated: March 2026</p>
+                        <p class="timeline-note">CGPA: 3.58/4.00 • Graduated: March 2026</p>
                     </div>
                 </div>
             </div>

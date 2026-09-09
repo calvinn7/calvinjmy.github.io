@@ -593,11 +593,17 @@ body {
 }
 
 .project-year {
-    display: block;
+    display: inline-block;
     font-size: 0.8rem;
-    letter-spacing: 2px;
-    color: var(--text-muted);
-    margin-bottom: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff !important;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    backdrop-filter: blur(4px);
+    text-transform: uppercase;
 }
 
 .project-icon {
